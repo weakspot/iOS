@@ -100,6 +100,7 @@ public class AppEnvironment {
     }
 
     public var watchGRDB: () -> DatabaseQueue = DatabaseQueue.watchDatabase
+    public var carPlayGRDB: () -> DatabaseQueue = DatabaseQueue.carPlayDatabase
     public var magicItemProvider: () -> MagicItemProviderProtocol = {
         MagicItemProvider()
     }
